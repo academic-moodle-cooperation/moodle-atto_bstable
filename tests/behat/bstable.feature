@@ -13,7 +13,7 @@ Feature: Atto bstables
     And I set the field "Blog entry body" to "Table test"
     And I select the text in the "Blog entry body" Atto editor
     And I click on "Show more buttons" "button"
-    When I click on "Table" "button"
+    When I click on "Tabular data" "button"
     And I set the field "Caption" to "Dinner"
     And I press "Create table"
     And I press "Save changes"
@@ -30,7 +30,7 @@ Feature: Atto bstables
     And I set the field "Blog entry body" to "<table><tr><td>Cell</td></tr></table>"
     And I select the text in the "Blog entry body" Atto editor
     And I click on "Show more buttons" "button"
-    And I click on "Table" "button"
+    And I click on "Tabular data" "button"
     And I click on "Edit table" "link"
     And I set the field "Caption" to "Dinner"
     And I press "Update table"
