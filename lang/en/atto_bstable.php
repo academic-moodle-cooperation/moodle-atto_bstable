@@ -48,3 +48,5 @@ $string['settingstylestriped'] = 'Striped style';
 $string['settingstylecondensed'] = 'Condensed style';
 $string['settingstylehover'] = 'Hover style';
 $string['settingstylebordered'] = 'Bordered style';
+$string['settingstylepreviewwith'] = 'Table with this style';
+$string['settingstylepreviewwithout'] = 'Table without this style';
