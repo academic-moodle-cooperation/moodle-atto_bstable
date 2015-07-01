@@ -9,3 +9,12 @@ div.editor_atto_content caption {
 div.editor_atto_content caption {
     height: auto;
 }
+
+#page-admin-setting-atto_bstable_settings .form-multicheckbox table {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#page-admin-setting-atto_bstable_settings .form-multicheckbox .row {
+    margin-left: 0px !important;
+}

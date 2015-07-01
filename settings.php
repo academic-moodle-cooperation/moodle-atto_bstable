@@ -31,10 +31,94 @@ if ($ADMIN->fulltree) {
         get_string('settingstyles_desc', 'atto_bstable'),
         array(),
         array(
-            'table-striped' => get_string('settingstylestriped', 'atto_bstable'),
-            'table-hover' => get_string('settingstylehover', 'atto_bstable'),
-            'table-bordered' => get_string('settingstylebordered', 'atto_bstable'),
-            'table-condensed' => get_string('settingstylecondensed', 'atto_bstable')
+            'table-striped' =>
+                get_string('settingstylestriped', 'atto_bstable').'<br />
+                <div class="row">
+                    <div class="span6">
+                        <table class="table">
+                            <caption>'.get_string('settingstylepreviewwithout', 'atto_bstable').'</caption>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                        </table>
+                    </div>
+                    <div class="span6">
+                        <table class="table table-striped">
+                            <caption>'.get_string('settingstylepreviewwith', 'atto_bstable').'</caption>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                        </table>
+                    </div>
+                </div>',
+            'table-hover' =>
+                get_string('settingstylehover', 'atto_bstable').'<br />
+                <div class="row">
+                    <div class="span6">
+                        <table class="table">
+                            <caption>'.get_string('settingstylepreviewwithout', 'atto_bstable').'</caption>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                        </table>
+                    </div>
+                    <div class="span6">
+                        <table class="table table-hover">
+                            <caption>'.get_string('settingstylepreviewwith', 'atto_bstable').'</caption>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                        </table>
+                    </div>
+                </div>',
+            'table-bordered' =>
+                get_string('settingstylebordered', 'atto_bstable').'<br />
+                <div class="row">
+                    <div class="span6">
+                        <table class="table">
+                            <caption>'.get_string('settingstylepreviewwithout', 'atto_bstable').'</caption>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                        </table>
+                    </div>
+                    <div class="span6">
+                        <table class="table table-bordered">
+                            <caption>'.get_string('settingstylepreviewwith', 'atto_bstable').'</caption>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                        </table>
+                    </div>
+                </div>',
+            'table-condensed' =>
+                get_string('settingstylecondensed', 'atto_bstable').'<br />
+                <div class="row">
+                    <div class="span6">
+                        <table class="table">
+                            <caption>'.get_string('settingstylepreviewwithout', 'atto_bstable').'</caption>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                        </table>
+                    </div>
+                    <div class="span6">
+                        <table class="table table-condensed">
+                            <caption>'.get_string('settingstylepreviewwith', 'atto_bstable').'</caption>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                            <tr><td>Cell</td><td>Cell</td></tr>
+                        </table>
+                    </div>
+                </div>'
         )
     ));
 }
