@@ -426,7 +426,9 @@ Y.namespace('M.atto_bstable').Button = Y.Base.create('button', Y.M.editor_atto.E
 
         // Note there are some spaces inserted in the cells and before and after, so that users have somewhere to click.
         var nl = "\n";
-        tablehtml = '<br/>' + nl + '<table class="table ' + this.get('styles') + '">' + nl;
+        tablehtml = '<br/>' + nl;
+        tablehtml += '<div class="table-responsive">' + nl;
+        tablehtml += '<table class="table ' + this.get('styles') + '">' + nl;
         console.log(this.get('styles'));
         tablehtml += '<caption>' + Y.Escape.html(caption.get('value')) + '</caption>' + nl;
 
@@ -452,7 +454,8 @@ Y.namespace('M.atto_bstable').Button = Y.Base.create('button', Y.M.editor_atto.E
             tablehtml += '</tr>' + nl;
         }
         tablehtml += '</tbody>' + nl;
-        tablehtml += '</table>' + nl + '<br/>';
+        tablehtml += '</table>' + nl;
+        tablehtml += '</div>' + nl + '<br/>';
 
         this.get('host').insertContentAtFocusPoint(tablehtml);
 
