@@ -1,0 +1,10 @@
+{
+  "name": "moodle-atto_bstable-button",
+  "builds": {
+    "moodle-atto_bstable-button": {
+      "jsfiles": [
+        "button.js"
+      ]
+    }
+  }
+}
